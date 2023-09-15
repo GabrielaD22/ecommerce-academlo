@@ -177,8 +177,8 @@ header > nav {
     align-items: center;
 
     position: absolute;
-    right: 25px;
-    top: 28px;
+    right: -5px;
+    top: 10px;
 }
 
 .handleIconNavbar {
