@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/main.js"  defer></script>
+</head>
+<body>
+    <header id="header" class="header__show">
+        <nav class="navPage Container">
+            <div href="#home" class="navpag__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav_logo-icon">
+                    <title>Academlo Logo</title>
+                    <g>
+                            <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                            </path>
+                    </g>
+                </svg>
+                <span>STORE</span>
+            </div>
+
+            <ul class="navpag__menu" id="navpagMenu">
+                <li>
+                    <a class="li_home link__active" href="#home" data-section="home">Home</a>
+                </li>
+                <li>
+                    <a class="li_product">Products</a>
+                </li>
+            </ul>
+            
+            <div class="navpag__icons">
+                <i class="bx bx-moon bx-sun" id="darkMode" ></i>
+                <i class='bx bx-shopping-bag' id="iconShowCart"></i>
+                <span class="amountProducts">0</span>
+                <i class="bx bxs-dashboard handleIconNavbar" id="iconShowMenu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <div class="Container">
+        <section class="infoContainerHome">
+        <div class="home__header">
+        <div class="none"></div>
+        <div class="home__header-img">
+            <img src="https://academlostorev1.netlify.app/images/sweater2.png" alt="Saco Negro">
+        </div>
+        </div>
+        <div class="home__bodyInfo">
+            <h2 class="home__body-t">New Sweatshirt COLLECTIONS 2024</h2>
+            <P class="home__body-p">
+                Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern design.
+            </P>
+            <p class="home__body-price">$14.00</p>
+            <a href="#products" class="home__body-products">Show more</a>
+        </div>
+        </section>
+    </div>
+
+    <section class="filterAll">
+    <div class="bxFilter">
+        <div class="filterContent">
+            <p>Show all</p>
+            <p>Show all products</p>
+        </div>
+        <div class="filterContent">
+            <p>Shirt</p>
+            <p>7 products</p>
+        </div>
+        <div class="filterContent">
+            <p>Hoodie</p>
+            <p>6 products</p>
+        </div>
+        <div class="filterContent">
+            <p>Sweater</p>
+            <p>5 products</p>
+        </div>
+    </div>
+    </section>
+
+    <div class="products"></div>
+
+    <div class="cart">
+        <i class="bx bx-x" id="iconCloseCart"></i>
+        <div class="cart__products"></div>
+        <div class="cart__total">
+            <div class="cart__total--info">
+                <span class="info__amount"></span>
+                <span class="info__total"></span>
+            </div>
+
+            <button class="btn__buy">Comprar</button>
+        </div>
+    </div>
+
+    <div class="loader" id="loader">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__img">
+            <title>Academlo Logo</title>
+            <g>
+                <g>
+                    <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+                    </path>
+                    <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                    </path>
+                </g>
+            </g>
+        </svg> 
+    </div>
+
+    </main>
+
+    <footer>
+        <section class="cfooter container">
+            <div class="footerItem">
+                    <h3 class="footerItem-title">Our information</h3>
+                    <ul>
+                        <li><a href="https://www.academlo.com/">Toluca - México</a></li>
+                    </ul>
+            </div>
+            <div class="footerItem">
+                <h3 class="footerItem-title">About Us</h3>
+                <ul>
+                    <li><a href="#home">Support Center</a></li>
+                    <li><a href="#home">Customer Support</a></li>
+                    <li><a href="#home">About Us</a></li>
+                    <li><a href="#home">Copy Right</a></li>
+                </ul>
+            </div>
+            <div class="footerItem">
+                <h3 class="footerItem-title">Product</h3>
+                <ul>
+                    <li><a href="#products">Hoodies</a></li>
+                    <li><a href="#products">Shirts</a></li>
+                    <li><a href="#products">Sweatshirts</a></li>
+                </ul>
+            </div>
+            <div class="footerItem">
+                <h3 class="footerItem-title">Social</h3>
+                <ul class="footerItem-social">
+                    <li>
+                        <a href="home">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#home">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#home">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <p><b>Leidy Gabriela Delgado Herrera, gabhis22@gmail.com y <a href="#">repositorio</a> de la persona que lo realizo</b></p>
+    </footer>
+    
+</body>
+
+</html>
