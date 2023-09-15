@@ -40,7 +40,6 @@ function handleNavMenu() {
 }
 
 
-
 const addDarkMode = () => {
     const body = document.body;
     const iconDarkMode = document.querySelector("#darkMode");
@@ -89,7 +88,7 @@ function printProducts(db) {
                     : `<span class="soldOut">Sold Out</span>`
 
         html += `
-        <div class="product">
+        <div id="products" class="product">
         <div class="product__img">
                 <img src="${product.image}" alt="imagen" />
                 </div>
